@@ -1,0 +1,4 @@
+content chromatabs content/
+skin    chromatabs default     skin/
+overlay chrome://browser/content/browser.xul    chrome://chromatabs/content/overlay.xul
+style		chrome://browser/content/browser.xul		chrome://chromatabs/skin/chromatabs.css

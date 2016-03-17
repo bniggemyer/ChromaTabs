@@ -1,0 +1,53 @@
+@import url('chrome://global/skin/');
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/*Color the bottom strip under the tabs to a color; this is modified by the javascript on tab select event*/
+.tabs-bottom {
+background-color: transparent !important;
+}
+
+tab {
+-moz-appearance:none !important;
+}
+
+.tabbrowser-tab:not([selected="true"]){
+	/*background-image:url('chrome://browser/skin/tabbrowser/tab-active-bkgnd.png') !important;*/ /* testing */
+}
+
+/* for Tree Style Tab vertical border */
+.treestyletab-splitter { /*:not([selected="true"]) */
+background-color: transparent !important;
+}
+
+.tabbrowser-tab {
+	/* TO DO: highlight the active tab */
+	/*background-image:url('chrome://chromatabs/skin/anim3.png') !important;
+	background-repeat: repeat-x;*/
+}
+
+/* for a semi-transparent close button */
+
+.tab-close-button:hover,
+.tabbrowser-tab[selected="true"] > .tab-close-button:hover {
+}
+
+.tab-close-button:hover:active,
+.tabbrowser-tab[selected="true"] > .tab-close-button:hover:active {
+}
+
+/* Firefox 4: color the entire navigation and toolbar container */
+#navigator-toolbox > toolbar:not(:-moz-lwtheme) {
+/* background-color:rgb(227,237,246); */ /* This is the Firefox 4 default */
+/* background: none; */ /* glass everywhere */
+background-image: none; /* overrides default white selected-tab background color of Firefox 4*/
+}
+
+.tabbrowser-tab[selected="true"]:not(:-moz-lwtheme) {
+/*background-image: -moz-linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.5) 30%),
+				  -moz-linear-gradient(rgb(227,237,246), rgb(227,237,246));*/
+/*background-image: none; /* overrides default white selected-tab background color of Firefox 4*/
+}
+
+#TabsToolbar[tabsontop="true"]:not(:-moz-lwtheme) {
+/*	border-bottom: 2px solid #000;*/
+}
