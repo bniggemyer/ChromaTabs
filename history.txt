@@ -1,25 +1,5 @@
 HISTORY
 
-v3.0.0 beta 1
+v4.0.0 Beta 1
 
-- Added support for Firefox 4.x but no longer supports Firefox 3.x.  It would have been too confusing and time-consuming to maintain two different interfaces.  Use version 2.3.0 for Firefox 3.6.x.
-- Removed choice of solid or clear "close tab" buttons.  Now reverts to the Firefox default which is clear in FF4.
-+ To integerate better with translucent Firefox 4 themes, the tab backgrounds can now be solid, transparent, or anywhere in between.
-
-v2.3.0
-
-+ Added tolerance when calculating "most frequent" color.  For example, the Google icon should now be green instead of grey.
-+ Separate opacity/saturation/luminosity values for selected tab, unselected tab, active tab (on mouseover)
-+ Added option to do nothing if a site icon is missing. The alternative would be to pick a color unique to the site's domain name.
-+ When coloring based on domain name, offer the option for different subdomains to share the same tab color.
-+ FIXED: "color is null" error message
-+ FIXED: No longer need to restart browser (and clear session) or hover over all tabs for new appearance settings to take effect.
-
-v2.2.0
-
-+ Option to use the most frequent color in the image.  If the results are inconclusive (rare), then it uses the old method of taking the average.
-+ Defaults to favicon-based tab colors.
-+ Transparent close-tab buttons
-+ Colorized border between page and tabs when using the Tree Style Tab extension
-+ FIXED: When starting firefox w/ a restored session, only the active tab gets colored.  Other tabs become colored on mouseover.
-+ FIXED: New tabs are not colored immediately after using "Open link in new tab"
+Fork from Chromatabs Plus.  Minor updates for modern versions of Firefox.  
